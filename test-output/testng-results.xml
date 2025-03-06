@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-06T12:22:43 IST" name="Default suite" finished-at="2025-03-06T12:22:44 IST" duration-ms="106">
+    <groups>
+    </groups>
+    <test started-at="2025-03-06T12:22:43 IST" name="Default test" finished-at="2025-03-06T12:22:44 IST" duration-ms="106">
+      <class name="com.syd.TestNGDemo">
+        <test-method is-config="true" signature="mathod()[pri:0, instance:com.syd.TestNGDemo@6025e1b6]" started-at="2025-03-06T12:22:43 IST" name="mathod" finished-at="2025-03-06T12:22:43 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mathod -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.syd.TestNGDemo@6025e1b6]" started-at="2025-03-06T12:22:43 IST" name="beforeClass" finished-at="2025-03-06T12:22:43 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.syd.TestNGDemo@6025e1b6]" started-at="2025-03-06T12:22:43 IST" name="beforeMethod" finished-at="2025-03-06T12:22:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="myTestZero()[pri:0, instance:com.syd.TestNGDemo@6025e1b6]" started-at="2025-03-06T12:22:43 IST" name="myTestZero" finished-at="2025-03-06T12:22:43 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTestZero -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.syd.TestNGDemo@6025e1b6]" started-at="2025-03-06T12:22:43 IST" name="afterMethod" finished-at="2025-03-06T12:22:43 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.syd.TestNGDemo@6025e1b6]" started-at="2025-03-06T12:22:43 IST" name="beforeMethod" finished-at="2025-03-06T12:22:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="myTestOne()[pri:1, instance:com.syd.TestNGDemo@6025e1b6]" started-at="2025-03-06T12:22:44 IST" name="myTestOne" finished-at="2025-03-06T12:22:44 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTestOne -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.syd.TestNGDemo@6025e1b6]" started-at="2025-03-06T12:22:44 IST" name="afterMethod" finished-at="2025-03-06T12:22:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.syd.TestNGDemo@6025e1b6]" started-at="2025-03-06T12:22:44 IST" name="afterClass" finished-at="2025-03-06T12:22:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afteSuit()[pri:0, instance:com.syd.TestNGDemo@6025e1b6]" started-at="2025-03-06T12:22:44 IST" name="afteSuit" finished-at="2025-03-06T12:22:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afteSuit -->
+      </class> <!-- com.syd.TestNGDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
