@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite-LoginTest">
+	<parameter name="browser" value="chrome" />
+	<parameter name="url" value="https://practice.expandtesting.com/login" />
+	<test thread-count="5" name="Test-Login">
+		<parameter name="username" value="practice" />
+		<parameter name="password" value="SuperSecretPassword!" />
+		<classes>
+			<class name="com.asserts.AssertionDemo"/>
+		</classes>
+	</test> <!--
+	Test-Login -->
+</suite> <!--
+Suite-LoginTest -->

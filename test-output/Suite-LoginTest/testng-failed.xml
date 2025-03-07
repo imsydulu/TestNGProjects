@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite-LoginTest]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://practice.expandtesting.com/login"/>
+  <test thread-count="5" name="Test-Login(failed)">
+    <parameter name="password" value="SuperSecretPassword!"/>
+    <parameter name="username" value="practice"/>
+    <classes>
+      <class name="com.asserts.AssertionDemo">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="loginTestwithInvalid" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="driverUtils"/>
+        </methods>
+      </class> <!-- com.asserts.AssertionDemo -->
+    </classes>
+  </test> <!-- Test-Login(failed) -->
+</suite> <!-- Failed suite [Suite-LoginTest] -->
