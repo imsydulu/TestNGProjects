@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Gmail-Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="url" value="https://www.google.co.in/"/>
+  <test thread-count="5" name="Gamil-Test(failed)">
+    <parameter name="username" value="Npemail@gmail.com"/>
+    <classes>
+      <class name="com.sydulu.GoogleTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="driverUtils"/>
+          <include name="gmailLoginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.sydulu.GoogleTest -->
+    </classes>
+  </test> <!-- Gamil-Test(failed) -->
+</suite> <!-- Failed suite [Gmail-Suite] -->

@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class TestNGDemo {
-
+	int count=0;
 	@BeforeSuite
 	public void mathod() {
 		System.out.println("@BeforeSuite");
@@ -40,9 +40,11 @@ public class TestNGDemo {
 		System.out.println("@BeforeMethod");
 	}
 
-	@Test(testName = "FirstTest")
+	@Test(testName = "FirstTest",invocationCount = 3,groups = "reg,sanity")
 	public void myTestZero() {
-		System.out.println("@Test");
+		
+		count++;
+		System.out.println("@Test:FirstTest"+count);
 	}
 
 	@AfterMethod
