@@ -37,12 +37,12 @@ public class AssertionDemo extends AppUtils {
 		driver.findElement(By.xpath("//i[text()=' Logout']")).click();
 		driver.navigate().refresh();
 		Assert.assertEquals(act, exp, "Test is passed");
-		System.out.println("hard assertion");
+		System.out.println("hard assertion");//if test failed execution halt 
 	}
 
-	// Softassertion
+	// Soft assertion
 	@Parameters(value = { "username", "password" })
-	@Test(testName = "SoftAssertionTest")
+	@Test(testName = "SoftAssertionTest",dependsOnMethods = "loginTest")
 	public void loginTestwithInvalid(String username, String password) {
 		action = new Actions(driver);
 		// action.scrollToElement(driver.findElement(By.xpath("//button[text()='Login']"))).perform();
@@ -56,9 +56,9 @@ public class AssertionDemo extends AppUtils {
 		String exp = "You logged into a secure area!";
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals(act, exp);
-		System.out.println("soft assertion");
+		System.out.println("soft assertion1");
 		softAssert.assertAll();
-		System.out.println("soft assertion");
+		System.out.println("soft assertion2");
 	}
 
 }
