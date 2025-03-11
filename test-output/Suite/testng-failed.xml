@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
-  <parameter name="url" value="https://practice.expandtesting.com/login"/>
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="com.listenerz.MyListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="FB-Test(failed)">
     <classes>
-      <class name="com.dtproviders.DataProvidersEx">
+      <class name="com.listenerz.ListnerzTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="driverUtils"/>
-          <include name="loginDataCheck" invocation-numbers="0 1"/>
+          <include name="driverSetup"/>
+          <include name="fbTestFail"/>
         </methods>
-      </class> <!-- com.dtproviders.DataProvidersEx -->
+      </class> <!-- com.listenerz.ListnerzTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- FB-Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

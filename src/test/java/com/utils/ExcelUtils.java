@@ -31,29 +31,22 @@ public class ExcelUtils {
 	 */
 	@DataProvider
 	public Object[][] readXLData() throws Exception {
-		File file=new File(path);
+		File file = new File(path);
 		FileInputStream fio = new FileInputStream(file);
 		workbook = new XSSFWorkbook(fio);
-		sheet =workbook.getSheetAt(0);
+		sheet = workbook.getSheetAt(0);
 		int noOfRows = sheet.getPhysicalNumberOfRows();
 		int noOfCols = sheet.getRow(0).getPhysicalNumberOfCells();
-		System.out.println("noOfRows"+noOfRows+"\nnoOfCols"+noOfCols);
-		Object[][] obj=new Object[noOfRows][noOfCols];
+		System.out.println("noOfRows" + noOfRows + "\nnoOfCols" + noOfCols);
+		Object[][] obj = new Object[noOfRows][noOfCols];
 		for (int i = 0; i < noOfRows; i++) {
 			for (int j = 0; j < noOfCols; j++) {
-				obj[i][j]=sheet.getRow(i).getCell(j).getStringCellValue();
+				obj[i][j] = sheet.getRow(i).getCell(j).getStringCellValue();
 			}
-			
 		}
-		
-		
 		workbook.close();
 		fio.close();
-		
-		
 		return obj;
-		
-		
 	}
 
 	public void createXLSheet() throws Exception {

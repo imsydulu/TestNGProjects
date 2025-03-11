@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sydulu.GoogleTest">
+      <class name="com.listenerz.ListnerzTest">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="driverUtils"/>
-          <include name="gmailLoginTest"/>
+          <include name="fbTestFail"/>
+          <include name="driverSetup"/>
         </methods>
-      </class> <!-- com.sydulu.GoogleTest -->
+      </class> <!-- com.listenerz.ListnerzTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
