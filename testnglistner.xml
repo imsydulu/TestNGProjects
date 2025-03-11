@@ -8,8 +8,8 @@
 		<classes>
 			<class name="com.listenerz.ListnerzTest">
 				<methods>
-					<include name="fbTestPass" />
-					<exclude name="fbTestFail" />
+					<exclude name="fbTestPass" />
+					<include name="fbTestFail" />
 				</methods>
 			</class>
 

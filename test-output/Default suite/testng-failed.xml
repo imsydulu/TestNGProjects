@@ -5,8 +5,9 @@
     <classes>
       <class name="com.listenerz.ListnerzTest">
         <methods>
-          <include name="fbTestFail"/>
           <include name="driverSetup"/>
+          <include name="closeBrowser"/>
+          <include name="fbTestFail"/>
         </methods>
       </class> <!-- com.listenerz.ListnerzTest -->
     </classes>

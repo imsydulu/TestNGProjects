@@ -1,10 +1,12 @@
 package com.listenerz;
 
+
+import org.testng.IRetryAnalyzer;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class MyListenerClass extends Base implements ITestListener {
+public class MyListenerClass extends Base implements ITestListener,IRetryAnalyzer {
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -34,9 +36,26 @@ public class MyListenerClass extends Base implements ITestListener {
 
 	@Override
 	public void onFinish(ITestContext context) {
-		
+
 		System.out.println("OnFinish: " + context.getName());
+
+	}
+	
+	private int count = 0;
+	@Override
+	public boolean retry(ITestResult result) {
 		
+		
+		System.out.println("result.isSuccess()=> " + result.isSuccess());
+		if (count < 2) {
+			System.out.println("retry======>>>>");
+			count++;
+			return true;
+		}
+
+		return false;
 	}
 
+
+	
 }
